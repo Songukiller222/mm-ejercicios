@@ -1,0 +1,17 @@
+*{
+	font-family: Arial;
+}
+
+div{
+	font-size: 2em;
+}
+.important_element{
+	color: red;
+}
+
+#div1{
+	color: blueviolet;
+}
+p,#div2{
+	font.weight: 800;
+}

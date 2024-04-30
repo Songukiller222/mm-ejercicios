@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style>
+		.boton{
+			font-size: 1.2em;
+			display: inline-block;
+			width: 100px;
+			height: 30px;
+			border: 1px solid #c0c0c0;
+			padding: 10px 20px;
+			color: #fff;
+		}
+		#boton1{
+			background-color: red;
+		}
+		#boton2{
+			background-color: darkgreen;
+			position: relative;
+		}
+		#boton3{
+			background-color: purple;
+		}
+		#boton2 ul{
+			position: absolute;
+		}
+	</style>
+
+</head>
+<body>
+	<div id= "boton1" class="boton" onclick="alert('You are gay!')">boton1</div>
+	<div id= "boton2" class="boton">
+	boton2
+	<ul>
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+		<li>Item 4</li>
+	</ul>
+	</div>
+	<div id= "boton3" class="boton">boton3</div>
+	<script>
+		var boton2 = document.getElementById('boton2');
+		boton2.addEventListener('click',()=>{
+			boton2.innerText = "Has clickeado sobre mi!!!"
+		} );
+		var botones= document.querySelectorAll('.boton');
+		for (var i = 0; i < botones.length; i++) {
+			botones[i].addEventListener('mouseover',(e)=>{
+			e.target.style.backgroundColor = "black";
+		});
+
+		}
+			</script>
+	<script src="hello_world.js"></script>
+</body>
+</html>
